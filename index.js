@@ -41,6 +41,11 @@ button.addEventListener("click", function (e) {
   result.innerText = "Your BMI score:-" + BmiValue.toFixed(2);
   result.id = "output";
 
+  const isExistingCategory = document.getElementById("categ");
+  if(isExistingCategory){
+    isExistingCategory.remove()
+  };
+
   const isExistingResult = document.getElementById("output");
   if (isExistingResult) {
     isExistingResult.remove();
