@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add the link to your Tailwind CSS file -->
+
+  <title>BMI Calculator</title>
+</head>
+<body class="bg-gray-100 h-screen">
+  <div class="flex items-center justify-center h-screen">
+    <!-- BMI Calculator -->
+    <div  id="main" class="bg-white p-8 rounded-md shadow-md">
+      <h1 class="text-xl font-bold mb-4">BMI CALCULATOR</h1>
+
+      <!-- Gender Selection -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-600">Select Gender:</label>
+        <div class="mt-1">
+          <label class="inline-flex items-center">
+            <input type="radio" class="form-radio" name="gender" value="male">
+            <span class="ml-2">Male</span>
+          </label>
+          <label class="inline-flex items-center ml-6">
+            <input type="radio" class="form-radio" name="gender" value="female">
+            <span class="ml-2">Female</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- BMI Calculator Form -->
+      <form>
+        <!-- Add your BMI calculator input fields here -->
+        <label for="weight">Weight (kg)
+            <input  id="weight" type="text" placeholder="enter your weight">
+        </label>
+        <label for="Height">Height (ft)
+            <input id="height" type="text" placeholder="enter your weight">
+        </label>
+
+        <!-- Calculate Button -->
+        <button id="butn" type="button" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Calculate BMI</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add any additional scripts or footer content here -->
+  <script src="index.js"></script>
+</body>
+</html>
